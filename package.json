@@ -1,0 +1,8 @@
+{
+  "name": "sinhala-gemini-bot",
+  "version": "1.0.0",
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0",
+    "axios": "^1.7.2"
+  }
+}
