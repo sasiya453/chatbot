@@ -3,8 +3,9 @@ const axios = require("axios");
 
 // Initialize Gemini
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest",
+apiVersion: 'v1' // Change from v1beta to v1 if the error persists
+});
 // System Instruction for Sinhala context
 const systemPrompt = "ඔබ ඉතා සුහදශීලී සිංහල සහායකයෙක්. ඔබ පරිශීලකයා සමඟ මිත්‍රශීලීව සිංහලෙන් කතා කළ යුතුයි. කෙටි සහ පැහැදිලි පිළිතුරු ලබා දෙන්න.";
 
